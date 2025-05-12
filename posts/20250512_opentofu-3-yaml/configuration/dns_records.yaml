@@ -1,0 +1,7 @@
+dns_records:
+  - name: test1.pmaier.at
+    type: A
+    content: "1.2.3.4"
+  - name: test2.pmaier.at
+    type: A
+    content: "4.3.2.1"

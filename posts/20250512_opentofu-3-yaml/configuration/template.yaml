@@ -1,0 +1,4 @@
+dns_records:
+  - name: something.example.com
+    type: A
+    content: "1.2.3.4"
