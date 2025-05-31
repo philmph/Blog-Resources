@@ -1,11 +1,13 @@
 variable "input" {
-  description = "Input variable for DNS records configuration schema validation"
+  description = "Input for dns_records schema validation"
   type = object({
-    dns_records = list(object({
-      name    = string
-      type    = string
-      content = string
-    }))
+    dns_records = list(
+      object({
+        name    = string
+        type    = string
+        content = string
+      })
+    )
   })
 
   validation {
@@ -17,5 +19,6 @@ variable "input" {
 }
 
 output "output" {
-  value = var.input
+  value       = var.input
+  description = "Schema validated dns_records"
 }
