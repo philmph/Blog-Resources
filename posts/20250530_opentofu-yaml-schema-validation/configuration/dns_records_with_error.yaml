@@ -1,6 +1,12 @@
+# Notes:
+# Line 8 will lead to an error because `content` is required
+# Line 10 will lead to an error because it doesn't match the `validation` block for `name`
+---
 dns_records:
   - name: test3.pmaier.at
-    content: "1.2.3.4"
-    type: A
-  - name: test4.pmaier.at
+    # type: A
+    # content: "1.2.3.4"
+
+  - name: test4.pmaier.00at
+    # type: A
     content: "1.2.3.4"
