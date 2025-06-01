@@ -4,7 +4,7 @@ variable "input" {
     dns_records = list(
       object({
         name    = string
-        type    = string
+        type    = optional(string, "A")
         content = string
       })
     )
