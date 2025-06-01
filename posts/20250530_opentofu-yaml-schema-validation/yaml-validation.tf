@@ -15,7 +15,7 @@ locals {
 }
 
 module "yaml_validation_dns_records" {
-  source = "./yaml-validation/dns_records"
+  source = "./yaml-validation/dns-records"
 
   input = local.yaml_configurations[local.configuration_name_dns_records]
 }
