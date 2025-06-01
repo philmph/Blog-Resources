@@ -1,5 +1,5 @@
 variable "input" {
-  description = "Input for dns_records schema validation"
+  description = "dns_records schema validation"
   type = object({
     dns_records = list(
       object({
@@ -16,6 +16,8 @@ variable "input" {
     ])
     error_message = "All DNS record names must be valid domain names."
   }
+
+  # Other useful validations...
 }
 
 output "output" {

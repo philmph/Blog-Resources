@@ -1,6 +1,8 @@
 locals {
-  # Load all yaml manifest files
+  # Root folder where all configuration files are located
   configuration_path = "${path.root}/configuration"
+
+  # Load all yaml manifest files
   yaml_manifests = { for i, o in fileset(local.configuration_path, "**/*.yaml") :
     o => yamldecode(file("${local.configuration_path}/${o}"))
   }
@@ -8,7 +10,7 @@ locals {
   # Valid
   manifest_name_dns_records = "dns_records.yaml"
 
-  # Will thorw an error
+  # TRYME: Will thorw an error
   # manifest_name_dns_records = "dns_records_with_error.yaml"
 }
 
