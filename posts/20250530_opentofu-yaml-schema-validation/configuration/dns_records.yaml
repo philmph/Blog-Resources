@@ -1,6 +1,6 @@
 # Notes:
 # type: A is no longer required because the module defines a default for it in the input variable
-# ommited: "Really?" will be thrown out because it is not defined in the module's input variable
+# omitted: "Really?" will be thrown out because it is not defined in the module's input variable
 ---
 dns_records:
   - name: test3.pmaier.at
