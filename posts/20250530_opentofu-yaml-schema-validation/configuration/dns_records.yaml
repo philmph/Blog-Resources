@@ -1,7 +1,13 @@
+# Notes:
+# type: A is no longer required because the module defines a default for it in the input variable
+# omitted: "Really?" will be thrown out because it is not defined in the module's input variable
+---
 dns_records:
   - name: test3.pmaier.at
-    type: A
+    # type: A
     content: "1.2.3.4"
+
   - name: test4.pmaier.at
-    type: A
+    # type: A
     content: "4.3.2.1"
+    omitted: "Really?"
