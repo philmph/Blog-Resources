@@ -1,5 +1,5 @@
 module "basic_usage" {
-  source = "./modules/simple"
+  source = "./modules/nullable"
 
   not_nullable_with_default    = null
   not_nullable_without_default = "module"
